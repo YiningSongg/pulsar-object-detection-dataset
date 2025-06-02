@@ -18,7 +18,7 @@ Each plot has been carefully cropped and verified, and is accompanied by a manua
 ## 📥 Data Sources and References
 
 - **HTRU1 Dataset**:  
-  GitHub: [https://github.com/as595/HTRU1](https://github.com/as595/HTRU1)
+  GitHub: [https://github.com/as595/HTRU1](https://github.com/as595/HTRU1)  
   Citation: *Morello et al. (2016), MNRAS, 463, 3, 3410–3423*  
   DOI: [10.1093/mnras/stw656](https://doi.org/10.1093/mnras/stw656)
 
@@ -34,7 +34,7 @@ Each plot has been carefully cropped and verified, and is accompanied by a manua
 
 You can download the dataset from the **GitHub Releases** page:
 
-👉 [Download from Releases](https://github.com/YiningSongg/pulsar-candidate-identification_DATASET_Object-Detection-version/releases)
+👉 [Download from Releases](https://github.com/YiningSongg/pulsar-object-detection-dataset)
 
 Or via command-line using a helper script:
 
