@@ -38,20 +38,19 @@ You can download the dataset from the **GitHub Releases** page:
 
 Or via command-line using a helper script:
 
+`bash download_data.sh`  
+
 ```bash
-bash download_data.sh
-
-
-HTRU1/
-├── HTRU1banddata/
-│   ├── images/
-│       ├── train/
-│           ├── cand_000001.png
-│           ├── ...
-│           ├── pulsar_0000.png
-│           ├── ...
-│   ├── images/
-│       ├── labels/
+HTRU1/  
+├── HTRU1banddata/  
+│   ├── images/  
+│       ├── train/  
+│           ├── cand_000001.png  
+│           ├── ...  
+│           ├── pulsar_0000.png  
+│           ├── ...  
+│   ├── images/  
+│       ├── labels/  
 │           ├── pulsar_0000.txt
 │           ├── ...
 ├── HTRU1intdata/
@@ -65,7 +64,9 @@ HTRU1/
 │       ├── labels/
 │           ├── pulsar_0000.txt
 │           ├── ...
+```
 
+```bash
 FAST/
 ├── lables/
 │   ├── xxxxxx.txt
@@ -84,6 +85,7 @@ FAST/
 │   ├── rfi
 │       ├── xxxxxx.png
 │       ├── xxxxxx.png
+```
 
 ## 🚀 How to Use the Dataset
 
@@ -97,7 +99,8 @@ Split the dataset into training, validation, and test folders according to your 
 
 The `data.yaml` file tells YOLOv8 where to find the dataset and how to interpret class labels. Here's an example:
 
-```yaml
+```
+yaml
 path: path/to/your_dataset  # dataset root directory
 train: images/train         # training images path
 val: images/val             # validation images path
@@ -107,17 +110,22 @@ test: images/test           # test images path
 names:
   0: RFI
   1: pulsar
+```
 
 ### 3. Train the YOLOv8 Model
 To start training with YOLOv8 (using ultralytics CLI), Here's an example:
 
-```yolo task=detect mode=train model=yolov8n.pt data=data.yaml epochs=50 imgsz=640
+```
+yolo task=detect mode=train model=yolov8n.pt data=data.yaml epochs=50 imgsz=640
+```
 
 ### 4. Validate and Test
 After training, validate the model or run inference on test images, Here's an example:
 
-```yolo task=detect mode=val model=runs/detect/train/weights/best.pt data=data.yaml
-```yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=images/test
+```
+yolo task=detect mode=val model=runs/detect/train/weights/best.pt data=data.yaml
+yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=images/test
+```
 
 ## Suggestions for Further Optimization
 
