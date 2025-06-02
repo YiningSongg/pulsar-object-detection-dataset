@@ -19,6 +19,9 @@ Each plot has been carefully cropped and verified, and is accompanied by a manua
 
 - **HTRU1 Dataset**:  
   GitHub: [https://github.com/as595/HTRU1](https://github.com/as595/HTRU1)
+  Citation: *Morello et al. (2016), MNRAS, 463, 3, 3410–3423*  
+  DOI: [10.1093/mnras/stw656](https://doi.org/10.1093/mnras/stw656)
+
 
 - **FAST Dataset**:  
   GitHub: [https://github.com/dzuwhf/FAST_label_data](https://github.com/dzuwhf/FAST_label_data)  
